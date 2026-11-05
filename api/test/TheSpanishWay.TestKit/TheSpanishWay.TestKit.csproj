@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="../../src/TheSpanishWay.Domain/TheSpanishWay.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

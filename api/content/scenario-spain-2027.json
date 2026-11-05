@@ -1,0 +1,96 @@
+{
+  "key": "spain-2027",
+  "name": "Spain 2027",
+
+  "issues": [
+    {
+      "key": "pensions",
+      "kind": "Positional",
+      "axisLoadings": { "Economy": 0.8, "SocialValues": 0.2 }
+    },
+    {
+      "key": "housing",
+      "kind": "Positional",
+      "axisLoadings": { "Economy": 1.0 }
+    },
+    {
+      "key": "corruption",
+      "kind": "Valence",
+      "linkedVariables": ["institutionaltrust"]
+    },
+    {
+      "key": "unemployment",
+      "kind": "Valence",
+      "linkedVariables": ["employment"]
+    }
+  ],
+
+  "events": [
+    {
+      "key": "corruption-scandal",
+      "category": "Conditional",
+      "baseProbability": 0.04,
+      "isBlocking": true,
+      "cooldownDays": 180,
+      "roles": [
+        {
+          "name": "$accused",
+          "kind": "Party",
+          "selection": [
+            {
+              "target": "Party",
+              "instance": "$accused",
+              "attribute": "credibility",
+              "operator": "LessThan",
+              "value": 60
+            }
+          ]
+        },
+        {
+          "name": "$figure",
+          "kind": "Character",
+          "scopedTo": "$accused"
+        }
+      ],
+      "effects": [
+        {
+          "target": "Party",
+          "instance": "$accused",
+          "attribute": "credibility",
+          "operation": "Add",
+          "minimumValue": -12,
+          "maximumValue": -4
+        },
+        {
+          "target": "WorldVariable",
+          "instance": "institutionaltrust",
+          "attribute": "current",
+          "operation": "Add",
+          "value": -1.5,
+          "durationDays": 90
+        }
+      ],
+      "tags": ["scandal", "institutions"]
+    },
+    {
+      "key": "inflation-shock",
+      "category": "Random",
+      "baseProbability": 0.02,
+      "isBlocking": false,
+      "defaultOption": "ride-it-out",
+      "durationDays": 30,
+      "cooldownDays": 365,
+      "effects": [
+        {
+          "target": "WorldVariable",
+          "instance": "inflation",
+          "attribute": "target",
+          "operation": "Add",
+          "minimumValue": 1.0,
+          "maximumValue": 3.5
+        }
+      ],
+      "tags": ["economy", "external"]
+    }
+  ]
+}

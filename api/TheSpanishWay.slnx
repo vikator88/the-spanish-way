@@ -1,0 +1,17 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/TheSpanishWay.Api/TheSpanishWay.Api.csproj" />
+    <Project Path="src/TheSpanishWay.Application/TheSpanishWay.Application.csproj" />
+    <Project Path="src/TheSpanishWay.Domain/TheSpanishWay.Domain.csproj" />
+    <Project Path="src/TheSpanishWay.Infrastructure/TheSpanishWay.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/test/">
+    <Project Path="test/TheSpanishWay.Api.FunctionalTests/TheSpanishWay.Api.FunctionalTests.csproj" />
+    <Project Path="test/TheSpanishWay.Application.UnitTests/TheSpanishWay.Application.UnitTests.csproj" />
+    <Project Path="test/TheSpanishWay.Architecture.Tests/TheSpanishWay.Architecture.Tests.csproj" />
+    <Project Path="test/TheSpanishWay.Domain.UnitTests/TheSpanishWay.Domain.UnitTests.csproj" />
+    <Project Path="test/TheSpanishWay.Infrastructure.IntegrationTests/TheSpanishWay.Infrastructure.IntegrationTests.csproj" />
+    <Project Path="test/TheSpanishWay.Simulation.Tests/TheSpanishWay.Simulation.Tests.csproj" />
+    <Project Path="test/TheSpanishWay.TestKit/TheSpanishWay.TestKit.csproj" />
+  </Folder>
+</Solution>

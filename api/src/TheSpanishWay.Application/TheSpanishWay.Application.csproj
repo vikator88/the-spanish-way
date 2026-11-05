@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="../TheSpanishWay.Domain/TheSpanishWay.Domain.csproj" />
+  </ItemGroup>
+
+  <!-- Abstraction packages only. No mediator, ORM, validation or serialisation library. -->
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
+  </ItemGroup>
+
+</Project>

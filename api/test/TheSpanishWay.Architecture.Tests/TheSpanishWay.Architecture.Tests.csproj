@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="../../src/TheSpanishWay.Domain/TheSpanishWay.Domain.csproj" />
+    <ProjectReference Include="../../src/TheSpanishWay.Application/TheSpanishWay.Application.csproj" />
+    <ProjectReference Include="../../src/TheSpanishWay.Infrastructure/TheSpanishWay.Infrastructure.csproj" />
+    <ProjectReference Include="../../src/TheSpanishWay.Api/TheSpanishWay.Api.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="xunit.v3" />
+    <PackageReference Include="xunit.runner.visualstudio" />
+    <PackageReference Include="Shouldly" />
+    <PackageReference Include="NetArchTest.Rules" />
+  </ItemGroup>
+
+</Project>

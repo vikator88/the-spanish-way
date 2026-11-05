@@ -1,0 +1,148 @@
+## .NET / Visual Studio .gitignore
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+artifacts/
+publish/
+PublishScripts/
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+*.nuget.props
+*.nuget.targets
+.nuget/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+launchSettings.local.json
+
+# Visual Studio cache/options
+.vs/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.DotSettings.user
+_ReSharper*/
+*.[Rr]e[Ss]harper
+.idea/
+*.sln.iml
+
+# JetBrains Rider
+.idea_modules/
+
+# Test results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.trx
+*.coverage
+*.coveragexml
+coverage*.json
+coverage*.xml
+coverage*.info
+TestResults/
+**/coverage/
+nunit-*.xml
+*.VisualState.xml
+.pytest_cache/
+
+# Benchmark results
+BenchmarkDotNet.Artifacts/
+
+# MSBuild / compiler logs
+*.binlog
+*.log
+*.tlog
+*.pdb
+*.ilk
+*.idb
+*.obj
+*.pch
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*_wpftmp.csproj
+msbuild.log
+msbuild.err
+msbuild.wrn
+
+# Publish profiles / deployment
+*.pubxml
+*.pubxml.user
+*.publishproj
+*.azurePubxml
+PublishProfiles/
+
+# Entity Framework
+*.mdf
+*.ldf
+*.ndf
+Migrations/*.Designer.cs.bak
+
+# Local databases
+*.sqlite
+*.sqlite3
+*.db
+*.db-shm
+*.db-wal
+
+# Secrets & local config
+secrets.json
+appsettings.Local.json
+appsettings.*.Local.json
+.env
+.env.*
+!.env.example
+
+# ASP.NET
+wwwroot/lib/
+node_modules/
+.angular/
+
+# Dotnet tools / local
+.dotnet/
+.config/dotnet-tools.json.bak
+
+# Rider / VS Code C# Dev Kit
+.cr/
+*.code-workspace
+
+# OS files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/

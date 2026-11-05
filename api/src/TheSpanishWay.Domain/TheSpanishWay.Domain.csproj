@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    The Domain references nothing: no project, no package beyond the BCL.
+    This emptiness is the cheapest proof that no infrastructure concern leaked in,
+    and TheSpanishWay.Architecture.Tests asserts it.
+  -->
+
+</Project>
